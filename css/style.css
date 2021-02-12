@@ -226,3 +226,7 @@ main {
 /* #portfolio #projects::-webkit-scrollbar {
     display: none;
 } */
+#portfolio #projects img {
+    width: 100%;
+    height: auto;
+}
