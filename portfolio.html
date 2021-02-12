@@ -59,15 +59,15 @@
             </div>
         </div>
         <main>
-            <header data-pgc="jfa.header" data-pg-collapsed>
+            <header data-pgc="jfa.header">
                 <a href="index.html"><img src="assets/logo-white-header.png"></a>
                 <div class="menu-btn">
                     <a href="" id="menu-open" data-pg-ia='{"l":[{"name":"Menu Open","trg":"click","a":{"l":[{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0},"e":"Power1.easeOut"},{"t":"tween","p":0,"d":0.6,"s":0,"l":{"autoAlpha":1},"e":"Power0.easeIn"}]},{"t":"section","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0},"e":"Power1.easeOut"},{"t":"tween","p":0.7,"d":0.5,"l":{"autoAlpha":1},"e":"Power0.easeIn"}]},{"t":"#menu-close","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0},"e":"Power1.easeOut"},{"t":"tween","p":0.7,"d":0.5,"l":{"autoAlpha":1},"e":"Power0.easeIn"}]},{"t":"$main header","l":[{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0}}]}]},"pdef":"true","rstr":"true","t":"$.menu-overlay"}]}'>MENU</a>
                 </div>
             </header>
             <section id="portfolio">
-                <div data-pg-collapsed id="category">
-                    <ul>
+                <div id="department" class="menu" data-pg-collapsed>
+                    <ul data-pg-collapsed>
                         <li>
                             <a href="">Architecture</a>
                         </li>
@@ -85,7 +85,38 @@
                         </li>
                     </ul>
                 </div>
-                <div class="pg-empty-placeholder"></div>
+                <div id="projects">
+                    <div class="pg-empty-placeholder"></div>
+                    <div class="pg-empty-placeholder"></div>
+                    <div class="pg-empty-placeholder"></div>
+                    <div class="pg-empty-placeholder"></div>
+                    <div class="pg-empty-placeholder"></div>
+                    <div class="pg-empty-placeholder"></div>
+                    <div class="pg-empty-placeholder"></div>
+                    <div></div>
+                    <div class="pg-empty-placeholder"></div>
+                    <div class="pg-empty-placeholder"></div>
+                    <div class="pg-empty-placeholder"></div>
+                </div>
+                <div id="category" class="menu">
+                    <ul>
+                        <li>
+                            <a href="">Leisure</a>
+                        </li>
+                        <li> 
+                            <a href="">Commercial</a>
+                        </li>
+                        <li> 
+                            <a href="">Residential</a>
+                        </li>
+                        <li> 
+                            <a href="">Urban</a>
+                        </li>
+                        <li> 
+                            <a href="">All</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>         
         <script src="pgia/lib/pgia.js"></script>
