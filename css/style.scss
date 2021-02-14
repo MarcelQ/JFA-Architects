@@ -1,7 +1,9 @@
 :root {
     --max-width: 1800px;
     --letter-spacing-wide: 0.4em;
-    --letter-spacing-normal: 0.1em
+    --letter-spacing-normal: 0.1em;
+    --text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    --text-shadow-light: 2px 2px 3px rgb(0 0 0);
 }
 
 body {
@@ -15,13 +17,13 @@ body {
     text-transform: uppercase;
     background-color: #101010;
     color: #ffffff;
+    text-shadow: --text-shadow-light;
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
-
-    /* letter-spacing: var(--letter-spacing-wide) */
+    letter-spacing: var(--letter-spacing-wide)
 }
 
 ul {
@@ -151,8 +153,8 @@ main {
     display: flex;
     justify-content: center;
     height: 20%;
-    text-shadow: 1px 1px 5.0px #000000;
     letter-spacing: 0.6em;
+    text-shadow: var(--text-shadow);
 }
 
 .menu-close {
@@ -201,4 +203,11 @@ main {
     #department.menu {
         justify-content: flex-end;
     }
+}
+
+#portfolio .pgia-slider {
+    height: 75vh
+}
+
+.pgia-slide {
 }
