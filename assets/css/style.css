@@ -178,7 +178,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 20%;
   letter-spacing: 0.6em;
   text-shadow: var(--text-shadow); }
 
@@ -191,7 +190,7 @@ main {
   height: 100%;
   max-width: var(max-width);
   background-repeat: no-repeat;
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0.5) 100%), url("/assets/images/architecture/INDEX02a.jpg");
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0.5) 100%), url("/assets/images/architecture/Royal-Palm-Marrakech-Club.jpg");
   background-size: cover;
   background-position: center bottom;
   z-index: -1; }
