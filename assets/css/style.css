@@ -194,10 +194,6 @@ main {
   background-size: cover;
   background-position: center bottom;
   z-index: -1; }
-
-.social {
-  opacity: 0;
-  visibility: hidden; }
   .social a {
     padding-left: 1.5em; }
 
