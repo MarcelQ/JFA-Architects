@@ -180,6 +180,10 @@ main {
 
 #portfolio {
     padding: 1em 1em 0em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     ul {
         display: flex;
@@ -202,16 +206,16 @@ main {
 }
 
 #portfolio .pgia-slider {
-    height: 75vh
+    height: 60%;
 }
 
-.pgia-slide {
-}
-
-.pgia-slide {
-    background-position: center center;
-    background-repeat: no-repeat;
+#portfolio .pgia-slide {
     background-size: cover;
+    background-position: center center;
+
+    /* flex-basis: calc(25% - 1em) */
+    margin: 0.5em;
+    background-image: -webkit-linear-gradient(90deg, rgb(26, 26, 26) 43.4564%, rgb(26, 26, 26) 43.4564%);
 }
 
 .pgia-slide a {
@@ -219,6 +223,21 @@ main {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.47) 45.8506%, rgba(255, 255, 255, 0) 100%);
+}
+
+.pgia-controls a {
+    background: none;
+}
+
+.pgia-slide h2.title {
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+}
+
+.pgia-slider h3 {
+    display: block;
 }

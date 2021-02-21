@@ -198,7 +198,18 @@ main {
     padding-left: 1.5em; }
 
 #portfolio {
-  padding: 1em 1em 0em; }
+  padding: 1em 1em 0em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   #portfolio ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,12 +231,14 @@ main {
             justify-content: flex-end; }
 
 #portfolio .pgia-slider {
-  height: 75vh; }
+  height: 60%; }
 
-.pgia-slide {
+#portfolio .pgia-slide {
+  background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  /* flex-basis: calc(25% - 1em) */
+  margin: 0.5em;
+  background-image: -webkit-linear-gradient(90deg, #1a1a1a 43.4564%, #1a1a1a 43.4564%); }
 
 .pgia-slide a {
   width: 100%;
@@ -236,8 +249,19 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.47) 45.8506%, rgba(255, 255, 255, 0) 100%); }
+
+.pgia-controls a {
+  background: none; }
+
+.pgia-slide h2.title {
+  font-size: 1.2em;
+  text-align: center;
+  display: block; }
+
+.pgia-slider h3 {
+  display: block; }
