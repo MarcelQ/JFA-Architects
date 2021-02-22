@@ -197,7 +197,8 @@ main {
   .social a {
     padding-left: 1.5em; }
 
-#portfolio {
+#portfolio,
+#team {
   padding: 1em 1em 0em;
   height: 100%;
   display: -webkit-box;
@@ -210,22 +211,26 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  #portfolio ul {
+  #portfolio ul,
+  #team ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0; }
-  #portfolio .menu {
+  #portfolio .menu,
+  #team .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
-    #portfolio .menu a {
+    #portfolio .menu a,
+    #team .menu a {
       padding: 0 1em 0em;
       font-size: 1em; }
-  #portfolio #department.menu {
+  #portfolio #department.menu,
+  #team #department.menu {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
