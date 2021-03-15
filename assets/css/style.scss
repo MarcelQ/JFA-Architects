@@ -274,3 +274,13 @@ main {
 .team p {
     text-transform: none;
 }
+
+#project .pgia-slide {
+    background-size: cover;
+    background-position: center center;
+    margin: 0.5em;
+}
+
+#project .pgia-slide .title {
+    align-content: space-between;
+}
