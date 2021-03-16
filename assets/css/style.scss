@@ -113,6 +113,7 @@ main {
     max-width: var(--max-width);
     display: flex;
     flex-direction: column;
+    z-index: 0;
 }
 
 .menu-overlay {
