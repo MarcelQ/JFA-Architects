@@ -1,5 +1,6 @@
 :root {
     --max-width: 1800px;
+    --letter-spacing-wider: 1.2em;
     --letter-spacing-wide: 0.4em;
     --letter-spacing-normal: 0.1em;
     --text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
@@ -167,10 +168,10 @@ main {
     height: 100%;
     max-width: var(max-width);
     background-repeat: no-repeat;
-    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0.5) 100%), url('../images/architecture/Royal-Palm-Marrakech-Club.jpg');
+    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0.5) 100%), url('/assets/images/architecture/Royal-Palm-Marrakech-Club.jpg');
     background-size: cover;
     background-position: center bottom;
-    z-index: -1;
+    z-index: 0;
 }
 
 .social {
@@ -277,9 +278,10 @@ main {
 }
 
 #project .pgia-slide {
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     margin: 0.5em;
+    background-repeat: no-repeat;
 }
 
 #project .pgia-slide .title {
@@ -288,4 +290,107 @@ main {
 
 .home-title h1 {
     font-size: 1.5em;
+}
+
+#specifications {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#specifications li {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 1em;
+}
+
+#details h2 {
+    letter-spacing: 0.6em;
+    font-size: 1.4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-weight: normal;
+}
+
+#details p {
+    text-align: center;
+}
+
+#details p {
+    text-transform: capitalize;
+}
+
+#project .details {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1200px;
+}
+
+#project h1 {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    bottom: 124px;
+    letter-spacing: var(--letter-spacing-wider);
+    font-weight: normal;
+}
+
+#project p {
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2em;
+}
+
+#project h2 {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    letter-spacing: 0.5em;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+.details #media {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#project #media {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.details h3 {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+}
+
+.our-story {
+    display: flex;
+    flex-direction: row;
+    max-height: 1200px;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+.our-story p {
+    text-transform: capitalize;
+    line-height: 2em;
+}
+
+.our-story h2 {
+    letter-spacing: 0.4em;
+    font-size: 1.2em;
+}
+
+.our-story h1 {
+    letter-spacing: 0.5em;
+    left: x;
+    border-bottom: 1px solid #b3b3b3;
+    padding: 0.5em;
+    border-left: 1px outset #b3b3b3;
 }
