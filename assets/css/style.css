@@ -192,7 +192,7 @@ main {
   height: 100%;
   max-width: var(max-width);
   background-repeat: no-repeat;
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0.5) 100%), url("/assets/images/architecture/Royal-Palm-Marrakech-Club.jpg");
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0.5) 100%), url("../images/architecture/Royal-Palm-Marrakech-Club.jpg");
   background-size: cover;
   background-position: center bottom;
   z-index: 0; }
