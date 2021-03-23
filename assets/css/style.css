@@ -19,12 +19,13 @@ body {
           align-items: center;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Code Pro Light LC';
+  font-family: 'Code Pro Light';
   font-style: normal;
   text-transform: uppercase;
   background-color: #101010;
   color: #ffffff;
-  text-shadow: --text-shadow-light; }
+  text-shadow: --text-shadow-light;
+  font-weight: 300; }
 
 a {
   color: #ffffff;
