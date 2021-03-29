@@ -11,4 +11,17 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Code Pro Light LC';
+    src: url('Code-Pro-Light-LC.eot');
+    src: url('Code-Pro-Light-LC.eot?#iefix') format('embedded-opentype'),
+        url('Code-Pro-Light-LC.woff2') format('woff2'),
+        url('Code-Pro-Light-LC.woff') format('woff'),
+        url('Code-Pro-Light-LC.ttf') format('truetype'),
+        url('Code-Pro-Light-LC.svg#Code-Pro-Light-LC') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 

@@ -3,8 +3,8 @@
     --letter-spacing-wider: 1.2em;
     --letter-spacing-wide: 0.4em;
     --letter-spacing-normal: 0.1em;
-    --text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
-    --text-shadow-light: 2px 2px 3px rgb(0 0 0);
+    --text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+    --text-shadow-light: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Code Pro Light';
+    font-family: Code Pro Light LC;
     font-style: normal;
     text-transform: uppercase;
     background-color: #101010;
@@ -67,6 +67,7 @@ header {
         font-size: 1.2em;
         z-index: 1;
         letter-spacing: var(--letter-spacing-normal);
+        text-shadow: var(--text-shadow);
     }
 }
 
@@ -337,6 +338,7 @@ main {
     bottom: 124px;
     letter-spacing: var(--letter-spacing-wider);
     font-weight: normal;
+    text-shadow: var(--text-shadow);
 }
 
 #project p {
