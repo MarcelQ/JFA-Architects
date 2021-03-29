@@ -453,3 +453,7 @@ hr {
   margin-top: 2em;
   margin-bottom: 2em;
   line-height: 1em; }
+
+.loading .loader {
+  max-width: 3em;
+  padding-top: 2em; }
