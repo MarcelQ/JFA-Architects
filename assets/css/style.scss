@@ -11,7 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100%;
+    height: 100vh;
+    height: -webkit-fill-available;
     margin: 0;
     font-family: Code Pro Light LC;
     font-style: normal;
@@ -75,7 +76,7 @@ header {
     display: flex;
     height: 100%;
     align-items: flex-end;
-    padding: 0em 1em 1em;
+    padding: 0em 1em;
     align-self: flex-end;
 
     ul {
@@ -165,16 +166,14 @@ main {
 .home-background {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    min-height: -webkit-fill-available;
     max-width: var(max-width);
     background-repeat: no-repeat;
-    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../images/architecture/Royal-Palm-Marrakech-Club.jpg');
-
-    /* background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0) 49.8592%, rgba(0, 0, 0, 0.5) 100%) */
     background-size: cover;
     background-position: center bottom;
     z-index: 0;
-    background-attachment: scroll;
+    background-image: url('../images/architecture/Royal-Palm-Marrakech-Club.jpg');
 }
 
 .social {
@@ -231,7 +230,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.47) 45.8506%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .pgia-controls a {
@@ -242,6 +241,8 @@ main {
     font-size: 1.2em;
     text-align: center;
     display: block;
+    font-weight: normal;
+    text-shadow: var(--text-shadow);
 }
 
 .pgia-slider h3 {
@@ -448,4 +449,37 @@ hr {
     height: 100%;
     background-image: -webkit-linear-gradient(90deg, #101010 0%, rgba(16, 16, 16, 0.6) 8%, rgba(0, 0, 0, 0) 22%, rgba(16, 16, 16, 0) 100%);
     position: absolute;
+}
+
+@media (max-width:991px) {
+    .home-title h1 {
+        font-size: 1.1em;
+        margin-top: 5em;
+        font-weight: normal;
+    }
+
+    #home-menu ul {
+        font-size: 1.2em;
+    }
+}
+
+.home-background div {
+    background-image: linear-gradient(right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url('../images/architecture/Royal-Palm-Marrakech-Club.jpg');
+}
+
+.home-background div {
+}
+
+.home-background:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+@media (max-width:991px) {
+    .home-background:before {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
 }
