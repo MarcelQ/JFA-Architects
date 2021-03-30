@@ -98,7 +98,8 @@ header {
     letter-spacing: 0.4em;
     text-align: right; }
   #home-menu li {
-    padding: 0.6em 0em 0.6em 0.6em; }
+    padding: 0.6em 0em 0.6em 0.6em;
+    text-shadow: var(--text-shadow); }
 
 #main-menu {
   display: -webkit-box;
@@ -136,8 +137,8 @@ main {
   background-color: rgba(16, 16, 16, 0.9);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,9 +181,7 @@ main {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  letter-spacing: 0.6em;
-  text-shadow: var(--text-shadow); }
+          justify-content: center; }
 
 .menu-close {
   opacity: 0; }
@@ -193,7 +192,8 @@ main {
   height: 100%;
   max-width: var(max-width);
   background-repeat: no-repeat;
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0.5) 100%), url("../images/architecture/Royal-Palm-Marrakech-Club.jpg");
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%), url("../images/architecture/Royal-Palm-Marrakech-Club.jpg");
+  /* background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5) 1%, rgba(0, 0, 0, 0) 49.8592%, rgba(0, 0, 0, 0.5) 100%) */
   background-size: cover;
   background-position: center bottom;
   z-index: 0; }
@@ -309,7 +309,9 @@ main {
 
 .home-title h1 {
   font-size: 1.5em;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 0.6em;
+  text-shadow: var(--text-shadow); }
 
 #specifications {
   display: -webkit-box;
@@ -354,7 +356,7 @@ main {
   text-align: center;
   z-index: 1;
   position: relative;
-  bottom: 124px;
+  bottom: 100px;
   letter-spacing: var(--letter-spacing-wider);
   font-weight: normal;
   text-shadow: var(--text-shadow); }
@@ -456,3 +458,16 @@ hr {
 
 .loading .loader {
   max-width: 3em; }
+
+#project .overlay {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.59) 8.60563%, rgba(0, 0, 0, 0) 21.6479%, rgba(0, 0, 0, 0) 98%);
+  position: absolute; }
+
+#project .pgia-slide:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(90deg, #101010 0%, rgba(16, 16, 16, 0.6) 8%, rgba(0, 0, 0, 0) 22%, rgba(16, 16, 16, 0) 100%);
+  position: absolute; }
