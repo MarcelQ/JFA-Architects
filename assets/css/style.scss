@@ -192,21 +192,24 @@ main {
 
     ul {
         display: flex;
-        padding: 0;
+        padding: 9px;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .menu {
         display: flex;
         align-items: flex-start;
+        flex-direction: row;
 
         a {
-            padding: 0 1em 0em;
             font-size: 1em;
+            margin: 0 1em;
         }
     }
 
     #department.menu {
-        justify-content: flex-end;
+        justify-content: flex-end
     }
 }
 
@@ -241,7 +244,6 @@ main {
     font-size: 1.2em;
     text-align: center;
     display: block;
-    font-weight: normal;
     text-shadow: var(--text-shadow);
 }
 
@@ -481,5 +483,22 @@ hr {
 @media (max-width:991px) {
     .home-background:before {
         background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+    }
+
+    #department.menu ul,
+    #category.menu ul,
+     {
+        font-size: 0.75em;
+        flex-wrap: wrap;
+        flex-direction: row
+    }
+
+    #department.menu li,
+    #category.menu li {
+        padding: 0.5em 0.1em
+    }
+
+    header img {
+        max-width: 4em;
     }
 }

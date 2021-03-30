@@ -220,7 +220,13 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0; }
+    padding: 9px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   #portfolio .menu,
   #team .menu {
     display: -webkit-box;
@@ -228,11 +234,15 @@ main {
     display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
     #portfolio .menu a,
     #team .menu a {
-      padding: 0 1em 0em;
-      font-size: 1em; }
+      font-size: 1em;
+      margin: 0 1em; }
   #portfolio #department.menu,
   #team #department.menu {
     -webkit-box-pack: end;
@@ -271,7 +281,6 @@ main {
   font-size: 1.2em;
   text-align: center;
   display: block;
-  font-weight: normal;
   text-shadow: var(--text-shadow); }
 
 .pgia-slider h3 {
@@ -504,4 +513,18 @@ hr {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); } }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); }
+  #department.menu ul,
+  #category.menu ul {
+    font-size: 0.75em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  #department.menu li,
+  #category.menu li {
+    padding: 0.5em 0.1em; }
+  header img {
+    max-width: 4em; } }
