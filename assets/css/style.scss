@@ -11,8 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    height: -webkit-fill-available;
     margin: 0;
     font-family: Code Pro Light LC;
     font-style: normal;
@@ -32,6 +30,8 @@ ul {
     list-style-type: none;
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-wide);
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .loading {
@@ -112,7 +112,6 @@ header {
 }
 
 main {
-    height: 100vh;
     width: 100%;
     max-width: var(--max-width);
     display: flex;
@@ -382,8 +381,8 @@ main {
 .our-story {
     display: flex;
     flex-direction: row;
-    max-height: 1200px;
-    flex-wrap: wrap;
+
+    /* max-height: 1200px */
     margin: 2em;
 }
 
@@ -409,7 +408,6 @@ main {
 .contact-info {
     display: flex;
     flex-direction: row;
-    max-height: 1200px;
     flex-wrap: wrap;
     margin: 2em;
 }
@@ -500,5 +498,60 @@ hr {
 
     header img {
         max-width: 4em;
+    }
+}
+
+@media (max-width:767px) {
+    .our-story,
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:991px) {
+    .our-story h1 {
+        font-size: 1.1em;
+    }
+}
+
+.our-story h2 {
+    font-size: 1em;
+}
+
+main.fit {
+    height: 100vh;
+}
+
+body.fit {
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+
+@media (max-width:991px) {
+    #project h1 {
+        font-size: 1em;
+    }
+
+    #project section {
+        text-align: center;
+    }
+}
+
+#project #specifications {
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:991px) {
+    #media img {
+        width: 100%;
+    }
+
+    #media h3 {
+        font-size: 0.9em;
+    }
+
+    .details h2 {
+        font-size: 1emem;
     }
 }
