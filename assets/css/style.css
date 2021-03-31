@@ -402,7 +402,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2em; }
+  margin: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .details h3 {
   font-weight: normal;
@@ -554,10 +557,10 @@ body.fit {
     text-align: center; } }
 
 #project #specifications {
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }

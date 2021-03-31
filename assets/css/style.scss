@@ -371,6 +371,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 2em;
+    align-items: center;
 }
 
 .details h3 {
@@ -538,7 +539,7 @@ body.fit {
 }
 
 #project #specifications {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
