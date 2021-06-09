@@ -216,7 +216,6 @@ main {
 #portfolio .pgia-slide {
     background-size: cover;
     background-position: center center;
-    flex-basis: calc(25% - 1em);
     margin: 0.5em;
     background-image: -webkit-linear-gradient(90deg, rgb(26, 26, 26) 43.4564%, rgb(26, 26, 26) 43.4564%);
 }
@@ -563,4 +562,8 @@ body.fit {
 
 #portfolio .pgia-slider {
     height: 600px;
+}
+
+#portfolio.team .pgia-slide {
+    background-position: center top;
 }
