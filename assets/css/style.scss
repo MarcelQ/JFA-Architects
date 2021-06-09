@@ -213,15 +213,10 @@ main {
     }
 }
 
-#portfolio .pgia-slider {
-    height: 60%;
-}
-
 #portfolio .pgia-slide {
     background-size: cover;
     background-position: center center;
-
-    /* flex-basis: calc(25% - 1em) */
+    flex-basis: calc(25% - 1em);
     margin: 0.5em;
     background-image: -webkit-linear-gradient(90deg, rgb(26, 26, 26) 43.4564%, rgb(26, 26, 26) 43.4564%);
 }
@@ -383,9 +378,9 @@ main {
 .our-story {
     display: flex;
     flex-direction: row;
+    margin: 2em;
 
     /* max-height: 1200px */
-    margin: 2em;
 }
 
 .our-story p {
@@ -477,7 +472,7 @@ hr {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: linear-gradient(right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.75) 100%);
+    background-image: linear-gradient(right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.75) 100%);
 }
 
 @media (max-width:991px) {
@@ -556,4 +551,16 @@ body.fit {
     .details h2 {
         font-size: 1emem;
     }
+}
+
+#portfolio.team {
+    height: 100%;
+}
+
+.pgia-slider.team {
+    height: 80%;
+}
+
+#portfolio .pgia-slider {
+    height: 600px;
 }
