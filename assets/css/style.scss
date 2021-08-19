@@ -183,7 +183,7 @@ main {
 }
 
 #portfolio,
-#team {
+#team {
     padding: 1em 1em 0em;
     height: 100%;
     display: flex;
@@ -336,16 +336,17 @@ main {
     text-align: center;
     z-index: 1;
     position: relative;
-    bottom: 100px;
+    bottom: 110px;
     letter-spacing: var(--letter-spacing-wider);
     font-weight: normal;
     text-shadow: var(--text-shadow);
 }
 
 #project p {
-    text-transform: capitalize;
-    text-align: center;
+    text-transform: none;
+    text-align: justify;
     line-height: 2em;
+    font-size: 1em;
 }
 
 #project h2 {
@@ -480,7 +481,7 @@ hr {
     }
 
     #department.menu ul,
-    #category.menu ul,
+        #category.menu ul,
      {
         font-size: 0.75em;
         flex-wrap: wrap;
@@ -488,7 +489,7 @@ hr {
     }
 
     #department.menu li,
-    #category.menu li {
+        #category.menu li {
         padding: 0.5em 0.1em
     }
 
@@ -499,7 +500,7 @@ hr {
 
 @media (max-width:767px) {
     .our-story,
-    .contact-info {
+        .contact-info {
         flex-direction: column;
     }
 }

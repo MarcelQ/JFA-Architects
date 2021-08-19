@@ -363,15 +363,16 @@ main {
   text-align: center;
   z-index: 1;
   position: relative;
-  bottom: 100px;
+  bottom: 110px;
   letter-spacing: var(--letter-spacing-wider);
   font-weight: normal;
   text-shadow: var(--text-shadow); }
 
 #project p {
-  text-transform: capitalize;
-  text-align: center;
-  line-height: 2em; }
+  text-transform: none;
+  text-align: justify;
+  line-height: 2em;
+  font-size: 1em; }
 
 #project h2 {
   margin-top: 1.2em;
