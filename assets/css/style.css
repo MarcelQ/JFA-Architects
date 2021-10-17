@@ -600,3 +600,6 @@ body.fit {
         flex-basis: 100%; }
   .pgia-slider[data-slider-slides-per-page="4"] .pgia-slide.pgia-clone:nth-last-child(-n+3) {
     display: none; } }
+
+sup {
+  vertical-align: top; }
