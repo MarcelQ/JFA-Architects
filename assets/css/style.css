@@ -577,7 +577,7 @@ body.fit {
   height: 80%; }
 
 #portfolio .pgia-slider {
-  height: 600px; }
+  height: 60vh; }
 
 #portfolio.team .pgia-slide {
   background-position: center top; }
@@ -603,3 +603,16 @@ body.fit {
 
 sup {
   vertical-align: top; }
+
+.pgia-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 8em;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75); }
+
+.pgia-control:hover,
+.pgia-control:focus {
+  color: #9d9d9d;
+  text-decoration: none; }
